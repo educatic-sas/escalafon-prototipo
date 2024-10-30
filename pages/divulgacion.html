@@ -1,0 +1,174 @@
+<p>Productos que dan cuenta de ideas, métodos o herramientas que pueden impactar el desarrollo económico y generar
+  innovación.</p>
+
+<div class="mb-4">
+  <label for="categoria-divu" class="form-label">
+    <strong>Seleccione un tipo de producto:</strong>
+  </label>
+  <select class="form-select" id="categoria-divu">
+    <option value="libro_texto">Libro de texto académico, de divulgación o informativo</option>
+    <option value="capitulo_libro">Capítulo de libro</option>
+    <option value="guia_clase">Guía de clase</option>
+    <option value="manual_laboratorio">Manual de laboratorio o de actividad práctica</option>
+    <option value="artefacto_laboratorio">Artefacto de laboratorio instalado en la EIA</option>
+    <option value="aula_digital">Aula digital</option>
+    <option value="ova">Objeto virtual de aprendizaje OVA</option>
+    <option value="articulo_no_indexadas">Artículo en revistas no indexadas</option>
+    <option value="ponencia_eventos">Ponencia en eventos de reconocido respaldo</option>
+    <option value="working_papers">Working papers</option>
+    <option value="articulos_prensa">Artículos en prensa, programas de radio, o programas de televisión</option>
+  </select>
+</div>
+
+<div class="categoriaInfo mb-4 p-3 alert alert-primary" role="alert" >
+  <i class="fas fa-lightbulb"></i>
+  <strong>Fuente de Verificación:</strong>
+  <p class="descripcionCategoria mb-0 mt-1"></p>
+</div>
+
+<!-- Form for filling the products -->
+<div class="mb-5">
+  <h5>Ingresar Información del Producto:</h5>
+  <div class="row" id="formularioProducto">
+    <div class="col-md-6 mb-3">
+      <div class="d-flex flex-column justify-content-between">
+        <label for="tituloProducto" class="form-label">Título del producto:</label>
+        <input type="text" class="form-control" id="tituloProducto" placeholder="Ingrese el título del producto.">
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-articulo">
+      <label for="articulo" class="form-label">ISSN/ISBN:</label>
+      <input type="text" class="form-control" id="articulo" placeholder="Ingrese el ISSN/ISBN.">
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-asignado">
+      <label for="asignado" class="form-label">Asignado:</label>
+      <input type="text" class="form-control" id="asignado">
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-descripcionUrl">
+      <label for="descripcionUrl" class="form-label">Descripción medio de publicación, url a sporte para
+        verificación</label>
+      <input type="text" class="form-control" id="descripcionUrl"
+        placeholder="Ingrese la descripción/URL de soporte del producto">
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-descripcion">
+      <label for="descripcion" class="form-label">Descripción</label>
+      <input type="text" class="form-control" id="descripcion" placeholder="Ingrese la descripción del producto">
+    </div>
+
+    <div class="col-md-6 mb-3">
+      <label for="evidencias" class="form-label">Evidencias:</label>
+      <input type="file" class="form-control" id="evidencias" placeholder="Adjunte las evidencias">
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="autores" class="form-label">Número de Autores:</label>
+      <input type="number" class="form-control" id="autores" min="1" max="99" placeholder="Número de autores"
+        oninput="if (this.value > 99) this.value = 99;">
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <label for="anioSemestre" class="form-label">Año y Semestre:</label>
+      <select class="form-select" id="anioSemestre">
+        <option value="2024-2">2024-2</option>
+        <option value="2024-1">2024-1</option>
+        <option value="2023-2">2023-2</option>
+        <option value="2023-1">2023-1</option>
+        <option value="2022-2">2022-2</option>
+        <option value="2022-1">2022-1</option>
+        <option value="2021-2">2021-2</option>
+        <option value="2021-1">2021-1</option>
+        <option value="2020-2">2020-2</option>
+        <option value="2020-1">2020-1</option>
+    </select>
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-tipo-libro">
+      <label for="tipo-libro" class="form-label">Tipo de libro:</label>
+      <select class="form-select" id="tipo-libro">
+        <option value="typeB">Libro tipo A</option>
+        <option value="typeA">Libro tipo B</option>
+      </select>
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-publicado-eia">
+      <div class="form-check m-0 p-0">
+        <label class="form-label" for="publicado-eia">Publicado Fondo Editorial EIA</label>
+        <div class="">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="publicado-eia" id="publicado-eia1" value="true">
+            <label class="form-check-label" for="inlineRadio1">Si</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="publicado-eia" id="publicado-eia2" value="false">
+            <label class="form-check-label" for="inlineRadio2">No</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-3" id="div-entrega">
+      <label for="entrega" class="form-label">Estado de entrega:</label>
+      <select class="form-select" id="entrega">
+        <option value="manuscrito">Entrega de manuscrito</option>
+        <option value="publicacion">Publicacion completa</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text-end">
+      <button type="button" class="btn edu-btn-primary">Adicionar</button>
+    </div>
+  </div>
+</div>
+
+<!-- Table for Added Products -->
+<div class="table-container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Tipo de Producto</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>ISSN/ISBN</th>
+        <th># autores</th>
+        <th>Año y Semestre</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Libro de texto académico, de divulgación o informativo</td>
+        <td>Manual de construcción, evalución y rehabilitación sismo resistente de viviendas de mampostería</td>
+        <td>Manual publicadopor la Asociación de Ingeniería Sísmica</td>
+        <td>ISBN 978-958-8683-19-5</td>
+        <td>4</td>
+        <td>2002-2</td>
+        <td>
+          <div class="d-flex flex-row justify-content-around">
+            <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+            <i class="bi bi-trash text-danger p-2 pointer"></i>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Guía de clase</td>
+        <td>Guias de resistencia de materiales: Identificacion de esfuerzos</td>
+        <td>Guia de laboratorio</td>
+        <td></td>
+        <td>1</td>
+        <td>2011-1</td>
+        <td>
+          <div class="d-flex flex-row justify-content-around">
+            <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+            <i class="bi bi-trash text-danger p-2 pointer"></i>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
