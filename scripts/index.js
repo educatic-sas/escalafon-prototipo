@@ -1,7 +1,3 @@
-document.getElementById('identificacion-tab').addEventListener('click', function () {
-  $('#current-page').text("Identificación");
-});
-
 document.getElementById('laboral-tab').addEventListener('click', function () {
   $('#current-page').text("Laboral");
 });
