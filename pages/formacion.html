@@ -51,12 +51,22 @@
           </select>
         </div>
         <div class="col-md-3 mt-3">
-          <label for="input4" class="form-label edu-label">
+          <label for="academicLevel" class="form-label edu-label">
             Nivel académico
             <span class="edu-mandatory ms-1">*</span>
           </label>
-          <input type="text" class="form-control edu-field" id="input9" placeholder="Seleccionar el nivel académico">
-        </div>
+          <select class="form-select edu-field" id="academicLevel">
+            <option value="" disabled selected>Seleccionar</option>
+            <option value="profesional">Profesional</option>
+            <option value="especializacion">Especialización</option>
+            <option value="tecnico">Técnico</option>
+            <option value="tecnologo">Tecnólogo</option>
+            <option value="maestria">Maestría</option>
+            <option value="licenciatura">Licenciatura</option>
+            <option value="postdoctorado">Postdoctorado</option>
+            <option value="doctorado">Doctorado</option>
+          </select>
+        </div>        
         <div class="col-md-3 mt-3">
           <label for="input4" class="form-label edu-label">
             Institución de educación
