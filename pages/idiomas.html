@@ -4,70 +4,216 @@
       <p class="edu-section-text">Estudios en idiomas</p>
     </div>
   </div>
+  <div class="row" id="form-idioma-row" style="display: none;">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="language" class="form-label edu-label">
+          Idioma
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="language">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="espanol">Español</option>
+          <option value="ingles">Inglés</option>
+          <option value="frances">Francés</option>
+        </select>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <div class="form-check checkbox-style">
+          <input class="form-check-input" type="checkbox" value="" id="nativeCheck">
+          <label class="form-check-label ms-1" for="nativeCheck">
+            Nativo
+          </label>
+        </div>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="speakLevel" class="form-label edu-label">
+          Habla
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="speakLevel">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="writeLevel" class="form-label edu-label">
+          Escribe
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="writeLevel">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="readLevel" class="form-label edu-label">
+          Lee
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="readLevel">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="requiredDocs" class="form-label edu-label">
+          Documentos Requeridos
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="requiredDocs">
+          <option value="" disabled selected>Seleccionar</option>
+        </select>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="examName" class="form-label edu-label">
+          Nombre Examen
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="examName">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="toefl">TOEFL</option>
+          <option value="ielts">IELTS</option>
+          <option value="dele">DELE</option>
+          <option value="tcf">TCF</option>
+        </select>
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="score" class="form-label edu-label">
+          Puntaje Obtenido
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="text" class="form-control edu-field" id="score" placeholder="Puntaje Obtenido">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="fileUpload" class="form-label edu-label">
+          Archivo
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="file" class="form-control edu-field" id="fileUpload">
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="establishment" class="form-label edu-label">
+          Establecimiento
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="text" class="form-control edu-field" id="establishment" placeholder="Establecimiento">
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="presentationDate" class="form-label edu-label">
+          Fecha Presentación
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="date" class="form-control edu-field" id="presentationDate">
+      </div>
+  
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="expiryDate" class="form-label edu-label">
+          Fecha Vencimiento
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="date" class="form-control edu-field" id="expiryDate">
+      </div>
+    </div>
+  </div>
   <div class="row">
-    <div class="col-12 mt-3">
-      <div class="table-container">
-        <table class="table" id="language-table">
-          <thead>
-            <tr>
-              <th>Puntaje</th>
-              <th>Nivel</th>
-              <th>Nombre de la prueba</th>
-              <th>Fecha de presentación</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>95</td>
-              <td>Avanzado</td>
-              <td>TOEFL iBT</td>
-              <td>Enero 2023</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>7.5</td>
-              <td>Avanzado</td>
-              <td>IELTS</td>
-              <td>Marzo 2022</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>B2</td>
-              <td>Intermedio Alto</td>
-              <td>Cambridge First Certificate</td>
-              <td>Julio 2021</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>C1</td>
-              <td>Avanzado</td>
-              <td>DELE</td>
-              <td>Noviembre 2020</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <div class="row my-3">
+      <div class="col-12 text-end">
+        <button type="button" class="btn edu-btn-primary" id="btnAdicionarIdioma">Añadir idioma</button>
+        <button type="button" class="btn edu-btn-error" id="btnCancelarIdiomas" style="display: none;">Cancelar</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="table-container">
+          <table class="table" id="language-table">
+            <thead>
+              <tr>
+                <th>Puntaje</th>
+                <th>Nivel</th>
+                <th>Nombre de la prueba</th>
+                <th>Fecha de presentación</th>
+                <th>Acciones</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>95</td>
+                <td>Avanzado</td>
+                <td>TOEFL iBT</td>
+                <td>Enero 2023</td>
+                <td>
+                  <div class="d-flex flex-row justify-content-around">
+                    <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                    <i class="bi bi-trash text-danger p-2 pointer"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>7.5</td>
+                <td>Avanzado</td>
+                <td>IELTS</td>
+                <td>Marzo 2022</td>
+                <td>
+                  <div class="d-flex flex-row justify-content-around">
+                    <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                    <i class="bi bi-trash text-danger p-2 pointer"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>B2</td>
+                <td>Intermedio Alto</td>
+                <td>Cambridge First Certificate</td>
+                <td>Julio 2021</td>
+                <td>
+                  <div class="d-flex flex-row justify-content-around">
+                    <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                    <i class="bi bi-trash text-danger p-2 pointer"></i>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>C1</td>
+                <td>Avanzado</td>
+                <td>DELE</td>
+                <td>Noviembre 2020</td>
+                <td>
+                  <div class="d-flex flex-row justify-content-around">
+                    <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                    <i class="bi bi-trash text-danger p-2 pointer"></i>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   </div>
