@@ -39,7 +39,12 @@ thead tr th {
   vertical-align: middle;
 }
 
-tbody, td, tfoot, th, thead, tr {
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
   border-style: none;
 }
 
@@ -52,6 +57,7 @@ td {
 i {
   font-size: 20px;
 }
+
 /* native styles */
 
 /* general styles */
@@ -62,6 +68,11 @@ i {
 .edu-btn-primary {
   background-color: #0B7A83;
   color: white;
+}
+
+.edu-btn-primary:hover {
+  border-color: #0B7A83;
+  border-width: 1px;
 }
 
 .edu-btn-error {
@@ -169,7 +180,8 @@ i {
   margin-bottom: 0px !important;
 }
 
-.ql-toolbar, .ql-container {
+.ql-toolbar,
+.ql-container {
   background: white;
 }
 
@@ -179,6 +191,7 @@ i {
   flex-direction: row;
   align-items: center;
 }
+
 /* identity styles */
 
 .page-title {
@@ -278,6 +291,7 @@ h5.subtitulo {
     height: 2rem;
   }
 }
+
 /* footer styles */
 
 /* Escalafon styles */
@@ -353,7 +367,8 @@ h5.subtitulo {
   justify-content: end;
 }
 
-.active>.page-link, .page-link.active {
+.active>.page-link,
+.page-link.active {
   color: #f9f9f9 !important;
   background-color: #0B7A83 !important;
   border-color: #0B7A83 !important;
@@ -362,4 +377,5 @@ h5.subtitulo {
 .page-link {
   color: #0B7A83 !important;
 }
+
 /* Escalafon styles */

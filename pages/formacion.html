@@ -1,191 +1,190 @@
-<p>Incluye en esta sección toda la información referente a tu formación.</p>
-
-<div class="container">
+<div class="row">
   <div class="row">
+    <div class="col-12">
+      <p class="edu-section-text">Historial de estudios</p>
+    </div>
+  </div>
+
+  <div class="row" id="form-row" style="display: none;">
     <div class="row">
-      <div class="col-12">
-        <p class="edu-section-text">Historial de estudios</p>
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="input7" class="form-label edu-label">
+          Fecha de inicio
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="date" class="form-control edu-field" id="input7" placeholder="DD-MM-AAAA">
       </div>
-    </div>
-    <div class="row" id="form-row" style="display: none;">
-      <div class="row">
-        <div class="col-md-3 col-sm-6 mt-3">
-          <label for="input7" class="form-label edu-label">
-            Fecha de inicio
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <input type="date" class="form-control edu-field" id="input7" placeholder="DD-MM-AAAA">
-        </div>
-        <div class="col-md-3 col-sm-6 mt-3">
-          <label for="input7" class="form-label edu-label">
-            Fecha de finalización
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <input type="date" class="form-control edu-field" id="input7" placeholder="DD-MM-AAAA">
-        </div>
-        <div class="col-md-6 mt-3">
-          <div class="form-check checkbox-style">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label ms-1" for="flexCheckDefault">
-              Actualmente me encuentro cursando
-            </label>
-          </div>
-        </div>
+      <div class="col-md-3 col-sm-6 mt-3">
+        <label for="input7" class="form-label edu-label">
+          Fecha de finalización
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="date" class="form-control edu-field" id="input7" placeholder="DD-MM-AAAA">
       </div>
-      <div class="row">
-        <div class="col-md-3 mt-3">
-          <label for="inputTituloObtenido" class="form-label edu-label">
-            Título obtenido
-            <span class="edu-mandatory ms-1">*</span>
+      <div class="col-md-6 mt-3">
+        <div class="form-check checkbox-style">
+          <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <label class="form-check-label ms-1" for="flexCheckDefault">
+            Actualmente me encuentro cursando
           </label>
-          <select class="form-select edu-field" id="inputTituloObtenido">
-            <option value="" disabled selected>Seleccionar</option>
-            <option value="bachiller">Bachiller</option>
-            <option value="tecnico">Técnico</option>
-            <option value="tecnologo">Tecnólogo</option>
-            <option value="profesional">Profesional</option>
-            <option value="especializacion">Especialización</option>
-            <option value="maestria">Maestría</option>
-            <option value="doctorado">Doctorado</option>
-            <option value="postdoctorado">Postdoctorado</option>
-          </select>
         </div>
-        <div class="col-md-3 mt-3">
-          <label for="academicLevel" class="form-label edu-label">
-            Nivel académico
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <select class="form-select edu-field" id="academicLevel">
-            <option value="" disabled selected>Seleccionar</option>
-            <option value="profesional">Profesional</option>
-            <option value="especializacion">Especialización</option>
-            <option value="tecnico">Técnico</option>
-            <option value="tecnologo">Tecnólogo</option>
-            <option value="maestria">Maestría</option>
-            <option value="licenciatura">Licenciatura</option>
-            <option value="postdoctorado">Postdoctorado</option>
-            <option value="doctorado">Doctorado</option>
-          </select>
-        </div>        
-        <div class="col-md-3 mt-3">
-          <label for="input4" class="form-label edu-label">
-            Institución de educación
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <input type="text" class="form-control edu-field" id="input9" placeholder="Institución de educación">
-        </div>
-        <div class="col-md-3 mt-3">
-          <label for="inputpais" class="form-label edu-label">
-            Pais
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <select class="form-select edu-field" id="inputpais">
-            <option value="" disabled selected>Seleccionar</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-3 mt-3">
-          <label for="inputdepa" class="form-label edu-label">
-            Departamento
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <select class="form-select edu-field" id="inputdepa">
-            <option value="" disabled selected>Seleccionar</option>
-          </select>
-        </div>
-        <div class="col-md-3 mt-3">
-          <label for="inputciudad" class="form-label edu-label">
-            Ciudad
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <select class="form-select edu-field" id="inputciudad">
-            <option value="" disabled selected>Seleccionar</option>
-          </select>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 mt-3">
-          <label for="input4" class="form-label edu-label">
-            Logros y reconocimientos
-            <span class="edu-mandatory ms-1">*</span>
-          </label>
-          <p>Describe los logros y reconocimientos obtenidos durante la formación, como por ejemplo: becas, certificaciones, promedios académicos, entre otros.</p>
-          <div>
-            <div id="editor-formacion"> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row my-3">
-      <div class="col-12 text-end">
-        <button type="button" class="btn edu-btn-primary" id="btnAdicionarFormacion">Añadir estudio</button>
-        <button type="button" class="btn edu-btn-error" id="btnCancelarFormacion" style="display: none;">Cancelar</button>
       </div>
     </div>
     <div class="row">
-      <div class="table-container">
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Fecha de inicio</th>
-              <th>Fecha de finalización</th>
-              <th>Título obtenido</th>
-              <th>Institución de educación</th>
-              <th>Acciones</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2023-01-01</td>
-              <td>2023-12-01</td>
-              <td>Maestría</td>
-              <td>Universidad Nacional</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>2022-02-01</td>
-              <td>2022-08-01</td>
-              <td>Ingeniería</td>
-              <td>Universidad Tecnológica</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>2021-05-01</td>
-              <td>2021-11-01</td>
-              <td>Doctorado</td>
-              <td>Universidad de Bogotá</td>
-              <td>
-                <div class="d-flex flex-row justify-content-around">
-                  <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
-                  <i class="bi bi-trash text-danger p-2 pointer"></i>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-md-3 mt-3">
+        <label for="inputTituloObtenido" class="form-label edu-label">
+          Título obtenido
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="text" class="form-control edu-field" id="establishment" placeholder="Establecimiento">
+      </div>
+      <div class="col-md-3 mt-3">
+        <label for="academicLevel" class="form-label edu-label">
+          Nivel académico
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="academicLevel">
+          <option value="" disabled selected>Seleccionar</option>
+          <option value="profesional">Profesional</option>
+          <option value="especializacion">Especialización</option>
+          <option value="tecnico">Técnico</option>
+          <option value="tecnologo">Tecnólogo</option>
+          <option value="maestria">Maestría</option>
+          <option value="licenciatura">Licenciatura</option>
+          <option value="postdoctorado">Postdoctorado</option>
+          <option value="doctorado">Doctorado</option>
+        </select>
+      </div>
+      <div class="col-md-3 mt-3">
+        <label for="input4" class="form-label edu-label">
+          Institución de educación
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <input type="text" class="form-control edu-field" id="input9" placeholder="Institución de educación">
+      </div>
+      <div class="col-md-3 mt-3">
+        <label for="inputpais" class="form-label edu-label">
+          Pais
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="inputpais">
+          <option value="" disabled selected>Seleccionar</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 mt-3">
+        <label for="inputdepa" class="form-label edu-label">
+          Departamento
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="inputdepa">
+          <option value="" disabled selected>Seleccionar</option>
+        </select>
+      </div>
+      <div class="col-md-3 mt-3">
+        <label for="inputciudad" class="form-label edu-label">
+          Ciudad
+          <span class="edu-mandatory ms-1">*</span>
+        </label>
+        <select class="form-select edu-field" id="inputciudad">
+          <option value="" disabled selected>Seleccionar</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 mt-3">
+        <label for="input4" class="form-label edu-label">
+          Logros y reconocimientos
+        </label>
+        <p>Describe los logros y reconocimientos obtenidos durante la formación, como por ejemplo: becas,
+          certificaciones, promedios académicos, entre otros.</p>
+        <div>
+          <div id="editor-formacion"> </div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="row mt-3">
-    <div class="row my-3">
-      <div class="col-12">
-        <p class="edu-section-text">Produccion de formacion</p>
-      </div>
+
+  <div class="row my-3">
+    <div class="col-12 text-end">
+      <button type="button" class="btn edu-btn-primary" id="btnAdicionarFormacion">Añadir estudio</button>
+      <button type="button" class="btn edu-btn-error" id="btnCancelarFormacion" style="display: none;">Cancelar</button>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="table-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Fecha de inicio</th>
+            <th>Fecha de finalización</th>
+            <th>Título obtenido</th>
+            <th>Institución de educación</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2023-01-01</td>
+            <td>2023-12-01</td>
+            <td>Maestría</td>
+            <td>Universidad Nacional</td>
+            <td>
+              <div class="d-flex flex-row justify-content-around">
+                <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                <i class="bi bi-trash text-danger p-2 pointer"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>2022-02-01</td>
+            <td>2022-08-01</td>
+            <td>Ingeniería</td>
+            <td>Universidad Tecnológica</td>
+            <td>
+              <div class="d-flex flex-row justify-content-around">
+                <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                <i class="bi bi-trash text-danger p-2 pointer"></i>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>2021-05-01</td>
+            <td>2021-11-01</td>
+            <td>Doctorado</td>
+            <td>Universidad de Bogotá</td>
+            <td>
+              <div class="d-flex flex-row justify-content-around">
+                <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
+                <i class="bi bi-trash text-danger p-2 pointer"></i>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-3">
+  <div class="row my-3">
+    <div class="col-12">
+      <p class="edu-section-text">Produccion de formación</p>
+    </div>
+
+    <div class="col-12">
+      <p class="m-0">Productos con los que usted aporta a la formación de estudiantes en un proceso de interacción
+        directa con ellos o en general a la formación de personas a cargo por el liderazgo de equipos de trabajo.</p>
+    </div>
+  </div>
+
+  <div class="row" id="form-prod-row" style="display: none;">
     <div class="mb-4">
-      <label for="categoria-form" class="form-label">
-        <strong>Seleccione un tipo de producto:</strong>
+      <label for="categoria-form" class="form-label edu-label">
+        Seleccione un tipo de producto:
+        <span class="edu-mandatory ms-1">*</span>
       </label>
       <select class="form-select" id="categoria-form">
         <option value="administracion">Administración académica</option>
@@ -195,9 +194,8 @@
           investigación</option>
         <option value="direccion_trabajos_grado_maestria_profundizacion">Dirección de trabajos de grado de maestría de
           profundización</option>
-        <option value="tutor_investigacion">Tutor de investigación</option>
         <option value="direccion_trabajo_grado_pregrado">Dirección de trabajo de grado de pregrado</option>
-        <option value="coordinacion_semilleros_investigacion">Coordinación de semilleros de investigación</option>
+        <option value="tutor_investigacion">Tutor de investigación</option>
         <option value="credito_docencia_directa">Crédito en docencia directa (pregrado o postgrado)</option>
         <option value="coordinacion_area_academica">Coordinación área académica</option>
         <option value="apoyo_academico_laboratorio">Apoyo académico a laboratorio o líder de competencia institucional
@@ -213,28 +211,33 @@
       <p class="descripcionCategoria mb-0 mt-1"></p>
     </div>
 
-    <!-- Form to Add Product Information -->
-    <div class="mb-5">
-      <h5>Ingresar Información del Producto:</h5>
+    <div>
+      <h6>Ingresar Información del Producto:</h6>
       <div class="row">
-
         <div class="col-md-6 mb-3">
           <div class="d-flex flex-column justify-content-center h-100">
-            <label for="tituloProducto" class="form-label" id="tituloLabel">Título del producto:</label>
+            <label for="tituloProducto" class="form-label edu-label">
+              <span id="tituloLabel">Título del producto:</span>
+              <span class="edu-mandatory ms-1">*</span>
+            </label>
             <input type="text" class="form-control" id="tituloProducto" placeholder="Ingrese el título del producto.">
           </div>
         </div>
 
-        <div class="col-md-3 mb-3" id="div-articulo">
-          <div class="d-flex flex-column justify-content-center h-100">
-            <label for="issnIsbn" class="form-label">ISSN/ISBN:</label>
-            <input type="text" class="form-control" id="issnIsbn" placeholder="Ingrese el ISSN o ISBN correspondiente">
-          </div>
+        <div class="col-md-6 mb-3">
+          <label for="evidencias" class="form-label edu-label" id="evidenciasLabel">
+            Evidencias:
+            <span class="edu-mandatory ms-1">*</span>
+          </label>
+          <input type="file" class="form-control" id="evidencias" placeholder="Adjunte las evidencias">
         </div>
 
         <div class="col-md-3 mb-3" id="div-creditos">
           <div class="d-flex flex-column justify-content-center h-100">
-            <label for="creditos" class="form-label">Número de créditos:</label>
+            <label for="creditos" class="form-label edu-label">
+              Número de créditos:
+              <span class="edu-mandatory ms-1">*</span>
+            </label>
             <input type="number" class="form-control" id="creditos" min="1" max="20"
               placeholder="Ingrese número de créditos">
           </div>
@@ -242,7 +245,10 @@
 
         <div class="col-md-3 mb-3" id="div-autores">
           <div class="d-flex flex-column justify-content-center h-100">
-            <label for="autores" class="form-label">Número de autores:</label>
+            <label for="autores" class="form-label edu-label">
+              Número de autores:
+              <span class="edu-mandatory ms-1">*</span>
+            </label>
             <input type="number" class="form-control" id="autores" min="1" max="99" placeholder="Número de autores"
               oninput="if (this.value > 99) this.value = 99;">
           </div>
@@ -250,14 +256,20 @@
 
         <div class="col-md-3 mb-3" id="div-grupos">
           <div class="d-flex flex-column justify-content-center h-100">
-            <label for="grupos" class="form-label">Número de grupos en el semestre:</label>
+            <label for="grupos" class="form-label edu-label">
+              Número de grupos en el semestre:
+              <span class="edu-mandatory ms-1">*</span>
+            </label>
             <input type="number" class="form-control" id="grupos" min="1" max="99"
               placeholder="Número de grupos en el semestre" oninput="if (this.value > 99) this.value = 99;">
           </div>
         </div>
 
         <div class="col-md-3 mb-3">
-          <label for="anioSemestre" class="form-label" id="anioSemestreLabel">Año-Semestre:</label>
+          <label for="anioSemestre" class="form-label edu-label" id="anioSemestreLabel">
+            Año-Semestre:
+            <span class="edu-mandatory ms-1">*</span>
+          </label>
           <select class="form-select" id="anioSemestre">
             <option value="2024-2">2024-2</option>
             <option value="2024-1">2024-1</option>
@@ -272,25 +284,28 @@
           </select>
         </div>
 
-        <div class="col-md-6 mb-3">
-          <label for="evidencias" class="form-label" id="evidenciasLabel">Evidencias:</label>
-          <input type="file" class="form-control" id="evidencias" placeholder="Adjunte las evidencias">
-        </div>
-
         <div class="col-md-12 mb-3">
-          <label for="descripcionUrl" class="form-label" id="descripcionUrlLabel">Descripción:</label>
-          <textarea class="form-control" id="descripcionUrl" rows="3"
-            placeholder="Ingrese la descripción del producto"></textarea>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 text-end">
-          <button type="button" class="btn edu-btn-primary">Adicionar</button>
+          <label for="descripcionUrl" class="form-label edu-label">
+            <span id="descripcionUrlLabel">Descripción:</span>
+            <span class="edu-mandatory ms-1">*</span>
+          </label>
+          <div>
+            <div id="editor-formacion2"> </div>
+          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Table for Added Products -->
+  <div class="row my-3">
+    <div class="col-12 text-end">
+      <button type="button" class="btn edu-btn-primary" id="btnAdicionarProdFormacion">Añadir producción</button>
+      <button type="button" class="btn edu-btn-error" id="btnCancelarProdFormacion"
+        style="display: none;">Cancelar</button>
+    </div>
+  </div>
+
+  <div class="row">
     <div class="table-container">
       <table class="table">
         <thead>
@@ -298,10 +313,8 @@
             <th>Categoría</th>
             <th>Título</th>
             <th>Descripción</th>
-            <th>#</th>
             <th>Año y Semestre</th>
             <th>Evidencia</th>
-            <th>Créditos o ISSN/ISBN</th>
             <th>Acciones</th>
           </tr>
         </thead>
@@ -310,7 +323,6 @@
             <td>Administración académica</td>
             <td>Coordinación de Área Académica</td>
             <td>Coordinación del área académica durante el semestre con buena evaluación.</td>
-            <td>2</td>
             <td>2024-1</td>
             <td>
               <div class="d-flex flex-row pointer">
@@ -318,7 +330,6 @@
                 <span class="py-2">Informe.pdf</span>
               </div>
             </td>
-            <td> </td>
             <td>
               <div class="d-flex flex-row justify-content-around">
                 <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
@@ -330,7 +341,6 @@
             <td>Encargo administrativo empresarial</td>
             <td>Gerencia de Proyecto</td>
             <td>Gestión de un proyecto empresarial de liderazgo con personal a cargo.</td>
-            <td>4</td>
             <td>2023-2</td>
             <td>
               <div class="d-flex flex-row pointer">
@@ -338,7 +348,6 @@
                 <span class="py-2">Gerencia.zip</span>
               </div>
             </td>
-            <td></td>
             <td>
               <div class="d-flex flex-row justify-content-around">
                 <i class="bi bi-pencil-square text-primary p-2 pointer"></i>
@@ -351,7 +360,6 @@
             <td>Tesis en Inteligencia Artificial</td>
             <td>Dirección de tesis doctoral sobre el desarrollo de sistemas de inteligencia artificial aplicados a la
               educación.</td>
-            <td>1</td>
             <td>2022-2</td>
             <td>
               <div class="d-flex flex-row pointer">
@@ -359,7 +367,6 @@
                 <span class="py-2">Tesis.pdf</span>
               </div>
             </td>
-            <td></td>
             <td>
               <div class="d-flex flex-row justify-content-around">
                 <i class="bi bi-pencil-square text-primary p-2 pointer"></i>

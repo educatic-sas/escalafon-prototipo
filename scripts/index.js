@@ -23,3 +23,9 @@ function setOtherFields(allFieldIds, selectedFieldIds) {
   allFieldIds.forEach(fieldId => $('#' + fieldId).hide());
   selectedFieldIds.forEach(fieldId => $('#' + fieldId).show());
 }
+
+function updateFormLabelsAndPlaceholders(category) {
+  $('#tituloLabel').text(category.labels.titulo);
+  $('#tituloProducto').attr('placeholder', category.placeholders.titulo);
+  $('#descripcionUrlLabel').text(category.labels.descripcion);
+}

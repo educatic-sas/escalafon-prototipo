@@ -1,4 +1,4 @@
-import { innovationObject } from '../utils/utils.js';
+import { innovationObject, quillDefaultValue } from '../utils/utils.js';
 
 document.getElementById('innovacion-tab').addEventListener('click', function () {
   const contentContainer = document.getElementById('innovacionContent');
@@ -9,33 +9,28 @@ document.getElementById('innovacion-tab').addEventListener('click', function () 
     .then(response => response.text())
     .then(data => {
       contentContainer.innerHTML = data;
+      const defaultValue = $('#categoria-inn').val();
+      setValuesInnova(defaultValue);
       setupCategoriaInnovacionChangeHandler();
+      new Quill('#editor-innovacion', quillDefaultValue);
     })
     .catch(error => console.error('Error cargando innovacion.html:', error));
 
 });
 
 function setupCategoriaInnovacionChangeHandler() {
-  const categoriaInfo = innovationObject.categoriaInfo;
-
-  const defaultValue = $('#categoria-inn').val();
-  $('.descripcionCategoria').text(categoriaInfo[defaultValue]);
-
-  // Handle changes to the dropdown
   $('#categoria-inn').on('change', function () {
     const selectedValue = $(this).val();
-    $('.descripcionCategoria').text(categoriaInfo[selectedValue]);
-
-    // Toggle fields based on selection
-    if (selectedValue === "softwareFuncional") {
-      $('#campoRegistro').show();
-      $('#campoIdNorma').hide();
-    } else if (selectedValue === "regulacionesNormas") {
-      $('#campoIdNorma').show();
-      $('#campoRegistro').hide();
-    } else {
-      $('#campoRegistro').hide();
-      $('#campoIdNorma').hide();
-    }
+    setValuesInnova(selectedValue);
   });
+}
+
+function setValuesInnova(value) {
+  const categoriaInfo = innovationObject.categoriaInfo;
+
+  if (categoriaInfo[value]) {
+    hidecategoryInfo(categoriaInfo[value].description);
+    setOtherFields(innovationObject.allFieldIds, categoriaInfo[value].fieldIds);
+    updateFormLabelsAndPlaceholders(categoriaInfo[value]);
+  }
 }

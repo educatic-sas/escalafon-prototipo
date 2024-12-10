@@ -1,4 +1,4 @@
-import { formationObject } from '../utils/utils.js';
+import { formationObject, quillDefaultValue } from '../utils/utils.js';
 
 document.getElementById('formacion-tab').addEventListener('click', function () {
   const contentContainer = document.getElementById('formacionContent');
@@ -11,21 +11,8 @@ document.getElementById('formacion-tab').addEventListener('click', function () {
       const defaultValue = $('#categoria-form').val();
       setValuesForm(defaultValue);
       setupCategoriaFormacionChangeHandler();
-      const quill = new Quill('#editor-formacion', {
-        modules: {
-          toolbar: [
-            [{ header: [1, 2, false] }],
-            ['bold', 'italic', 'underline', 'strike'],
-            [{ 'list': 'ordered'}, { 'list': 'bullet' }, { 'list': 'check' }],
-            [{ 'align': [] }],
-            [{ 'indent': '-1'}, { 'indent': '+1' }], 
-            ['clean'],
-            ['link', 'image']
-          ]
-        },
-        placeholder: '',
-        theme: 'snow'
-      });
+      new Quill('#editor-formacion', quillDefaultValue);
+      new Quill('#editor-formacion2', quillDefaultValue);
 
       document.getElementById('btnAdicionarFormacion').addEventListener('click', function() {
         document.getElementById('form-row').style.display = 'block';
@@ -35,6 +22,16 @@ document.getElementById('formacion-tab').addEventListener('click', function () {
       document.getElementById('btnCancelarFormacion').addEventListener('click', function() {
         document.getElementById('form-row').style.display = 'none';
         document.getElementById('btnCancelarFormacion').style.display = 'none';
+      });
+
+      document.getElementById('btnAdicionarProdFormacion').addEventListener('click', function() {
+        document.getElementById('form-prod-row').style.display = 'block';
+        document.getElementById('btnCancelarProdFormacion').style.display = 'inline-block';
+      });
+    
+      document.getElementById('btnCancelarProdFormacion').addEventListener('click', function() {
+        document.getElementById('form-prod-row').style.display = 'none';
+        document.getElementById('btnCancelarProdFormacion').style.display = 'none';
       });
     })
     .catch(error => console.error('Error cargando formacion.html:', error));
@@ -56,12 +53,4 @@ function setValuesForm(value) {
     setOtherFields(formationObject.allFieldIds, categoriaInfo[value].fieldIds);
     updateFormLabelsAndPlaceholders(categoriaInfo[value]);
   }
-}
-
-function updateFormLabelsAndPlaceholders(category) {
-  $('#tituloLabel').text(category.labels.titulo);
-  $('#tituloProducto').attr('placeholder', category.placeholders.titulo);
-
-  $('#descripcionUrlLabel').text(category.labels.descripcion);
-  $('#descripcionUrl').attr('placeholder', category.placeholders.descripcion);
 }

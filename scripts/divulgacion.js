@@ -1,4 +1,4 @@
-import { divulgationObject } from '../utils/utils.js';
+import { divulgationObject, quillDefaultValue } from '../utils/utils.js';
 
 document.getElementById('divulgacion-tab').addEventListener('click', function () {
   const contentContainer = document.getElementById('divulgacionContent');
@@ -12,6 +12,7 @@ document.getElementById('divulgacion-tab').addEventListener('click', function ()
       const defaultValue = $('#categoria-divu').val();
       setValuesDiv(defaultValue);
       setupCategoriaDivulgacionChangeHandler();
+      new Quill('#editor-divulgacion', quillDefaultValue);
     })
     .catch(error => console.error('Error cargando divulgacion.html:', error));
 });
@@ -39,5 +40,6 @@ function setValuesDiv(value) {
   if (categoriaInfo[value]) {
     hidecategoryInfo(categoriaInfo[value].description);
     setOtherFields(divulgationObject.allFieldIds, categoriaInfo[value].fieldIds);
+    updateFormLabelsAndPlaceholders(categoriaInfo[value]);
   }
 }

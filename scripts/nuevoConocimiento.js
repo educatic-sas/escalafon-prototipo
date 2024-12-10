@@ -1,4 +1,4 @@
-import { newKnowledgeObject } from '../utils/utils.js';
+import { newKnowledgeObject, quillDefaultValue } from '../utils/utils.js';
 
 document.getElementById('nuevo-conocimiento-tab').addEventListener('click', function () {
   const contentContainer = document.getElementById('nuevoConocimientoContent');
@@ -10,8 +10,9 @@ document.getElementById('nuevo-conocimiento-tab').addEventListener('click', func
     .then(data => {
       contentContainer.innerHTML = data;
       const defaultValue = $('#categoria-nuevo').val();
-      setValues(defaultValue);
+      setValuesNuevo(defaultValue);
       setupCategoriaChangeHandler();
+      new Quill('#editor-nuevo-cono', quillDefaultValue);
     })
     .catch(error => console.error('Error cargando nuevoConocimiento.html:', error));
 });
@@ -19,15 +20,16 @@ document.getElementById('nuevo-conocimiento-tab').addEventListener('click', func
 function setupCategoriaChangeHandler() {
   $('#categoria-nuevo').change(function () {
     const selectedValue = $(this).val();
-    setValues(selectedValue);
+    setValuesNuevo(selectedValue);
   });
 }
 
-function setValues(value) {
+function setValuesNuevo(value) {
   const categoriaInfo = newKnowledgeObject.categoriaInfo;
 
   if (categoriaInfo[value]) {
     hidecategoryInfo(categoriaInfo[value].description);
     setOtherFields(newKnowledgeObject.allFieldIds, categoriaInfo[value].fieldIds);
+    updateFormLabelsAndPlaceholders(categoriaInfo[value]);
   }
 }
